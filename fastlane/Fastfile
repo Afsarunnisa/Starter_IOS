@@ -19,16 +19,16 @@ platform :ios do
   before_all do
     # ENV["SLACK_URL"] = "https://hooks.slack.com/services/..."
     cocoapods
-    cert
-    sigh
-    gym(scheme: "Starter_IOS")
+# cert
+#sigh
+#   gym(scheme: "Starter_IOS")
 
   end
 
   desc "Runs all the tests"
   lane :test do
     scan(scheme: "Starter_IOS")
-    gym(scheme: "Starter_IOS")
+   # gym(scheme: "Starter_IOS")
 
   end
 
