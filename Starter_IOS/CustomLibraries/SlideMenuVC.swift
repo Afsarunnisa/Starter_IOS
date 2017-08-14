@@ -13,14 +13,12 @@ import idn_sdk_ios
 
 class SlideMenuVC: UIViewController,UITableViewDelegate{
 
-    
     var hud : MBProgressHUD = MBProgressHUD()
 
     @IBOutlet weak var sliderTableView: UITableView!
     @IBOutlet weak var userNameLabel: UILabel!
     
     let menuArray: NSArray = [USER_DASHBOARD_STR, USER_PROFILE_STR, USER_CHANGE_PASSWORD_STR]
-
     
     @IBOutlet weak var logoutBtn: UIButton!
     @IBOutlet weak var userName: UILabel!
