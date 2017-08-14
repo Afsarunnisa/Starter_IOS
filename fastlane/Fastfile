@@ -19,14 +19,16 @@ platform :ios do
   before_all do
     # ENV["SLACK_URL"] = "https://hooks.slack.com/services/..."
     cocoapods
+    cert
+    sigh
     gym(scheme: "Starter_IOS")
 
   end
 
   desc "Runs all the tests"
   lane :test do
-    scan
-    gym(scheme: "Starter_IOS", workspace: "Starter_IOS.xcworkspace", use_legacy_build_api: true) # Build your app - more options available
+    scan(scheme: "Starter_IOS")
+    gym(scheme: "Starter_IOS")
 
   end
 
@@ -34,8 +36,8 @@ platform :ios do
   desc "This will also make sure the profile is up to date"
   lane :beta do
     # match(type: "appstore") # more information: https://codesigning.guide
-    gym(scheme: "Starter_IOS", workspace: "Starter_IOS.xcworkspace", use_legacy_build_api: true) # Build your app - more options available
-    pilot
+#gym(scheme: "Starter_IOS", workspace: "Starter_IOS.xcworkspace", use_legacy_build_api: true) # Build your app - more options available
+#pilot
 
     # sh "your_script.sh"
     # You can also use other beta testing services here (run `fastlane actions`)

@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <testsuites name='Starter_IOSTests.xctest' tests='3' failures='0'>
   <testsuite name='Starter_IOSUITests.Starter_IOSUITests' tests='1' failures='0'>
-    <testcase classname='Starter_IOSUITests.Starter_IOSUITests' name='testExample' time='7.215'/>
+    <testcase classname='Starter_IOSUITests.Starter_IOSUITests' name='testExample' time='7.315'/>
   </testsuite>
   <testsuite name='Starter_IOSTests.Starter_IOSTests' tests='2' failures='0'>
-    <testcase classname='Starter_IOSTests.Starter_IOSTests' name='testExample' time='0.002'/>
-    <testcase classname='Starter_IOSTests.Starter_IOSTests' name='testPerformanceExample' time='0.259'/>
+    <testcase classname='Starter_IOSTests.Starter_IOSTests' name='testExample' time='0.001'/>
+    <testcase classname='Starter_IOSTests.Starter_IOSTests' name='testPerformanceExample' time='0.311'/>
   </testsuite>
 </testsuites>
